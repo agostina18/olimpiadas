@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Alumno</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<br> <br>
+    <div class="form-container">
+        <h2>Registro de Alumno</h2>
+        <form action="register.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+            <label for="escuela">Escuela:</label>
+            <select id="escuela" name="escuela" required>
+                <option value="Escuela Secundaria N°1">Escuela Secundaria N°1</option>
+                <option value="Escuela Secundaria N°2">Escuela Secundaria N°2</option>
+                <option value="Escuela Técnica N°1">Escuela Técnica N°1</option>
+                <option value="Escuela Técnica N°2">Escuela Técnica N°2</option>
+            </select>
+
+            <label for="actividad">Actividad:</label>
+            <select id="actividad" name="actividad" required>
+                <option value="Matemáticas">Matemáticas</option>
+                <option value="Física">Física</option>
+                <option value="Química">Química</option>
+                <option value="Informática">Informática</option>
+            </select>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Olimpiadas Estudiantiles. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
